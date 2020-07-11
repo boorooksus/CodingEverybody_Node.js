@@ -1,0 +1,11 @@
+ex)
+http://opentutorial.org:3000/main?id=HTML&page=12
+protocol  host(domain)  port path    query_string
+
+http: protocol
+opentutorial.org: host(domain)
+3000: protocol
+main: path
+id=HTML&page=12: query string
+
+다음시간에 query string에 대해 배움

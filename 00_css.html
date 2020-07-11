@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>css</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="00_colors.js"></script>
+        <script>
+            var a_list = {
+                "html": "00_html.html",
+                "css": "00_css.html",
+                "javaScript": "00_javaScript.html",
+
+                showList:function(){
+                    document.write("<ol>");
+                    for(key in a_list){
+                        if(key !== "showList"){
+                            if(key === "css"){
+                                document.write("<li><a href=\""+a_list[key]+"\" style=font-weight:bold;>"+key+"</a></li>");
+                            }
+                            else{
+                                document.write("<li><a href=\""+a_list[key]+"\">"+key+"</a></li>");
+                            }
+                            
+                        }
+                    }
+                    document.write("</ol>");
+
+                }
+            };
+
+            function nightDayHandler(self){
+                var alist = document.querySelectorAll('li');
+                if(self.value === 'night'){
+                    Body.setBackgroundColor('rgb(30,30,30)');
+                    Body.setColor('white');
+                    self.value = 'day';
+                    Links.setColor('white');
+                }
+                else{
+                    Body.setBackgroundColor('white');
+                    Body.setColor('black');
+                    self.value = 'night';
+                    Links.setColor('black');
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="00_style.css">
+    </head>
+    <body style=margin:0;>
+        <input id="night_day" type="button" value = "night" onclick="nightDayHandler(this)">
+        <h1><a href="00_index.html">WEB</a></h1>
+        <div id="grid">
+            <script>
+                a_list.showList();
+            </script>
+            <p style=padding:20px;>
+                <img src="00_cssimg.png" alt="css logo" width="200"><br>
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+            </p>
+        </div>
+        
+    </body>
+</html>

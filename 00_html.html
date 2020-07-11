@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>html</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="00_colors.js"></script>
+        <script>
+            var a_list = {
+                "html": "00_html.html",
+                "css": "00_css.html",
+                "javaScript": "00_javaScript.html",
+
+                showList:function(){
+                    document.write("<ol>");
+                    for(key in a_list){
+                        if(key !== "showList"){
+                            if(key === "html"){
+                                document.write("<li><a href=\""+a_list[key]+"\" style=font-weight:bold;>"+key+"</a></li>");
+                            }
+                            else{
+                                document.write("<li><a href=\""+a_list[key]+"\">"+key+"</a></li>");
+                            }
+                            
+                        }
+                    }
+                    document.write("</ol>");
+
+                }
+            };
+
+            function nightDayHandler(self){
+                var alist = document.querySelectorAll('li');
+                if(self.value === 'night'){
+                    Body.setBackgroundColor('rgb(30,30,30)');
+                    Body.setColor('white');
+                    self.value = 'day';
+                    Links.setColor('white');
+                }
+                else{
+                    Body.setBackgroundColor('white');
+                    Body.setColor('black');
+                    self.value = 'night';
+                    Links.setColor('black');
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="00_style.css">
+    </head>
+    <body style=margin:0;>
+        <input id="night_day" type="button" value = "night" onclick="nightDayHandler(this)">
+        <h1><a href="00_index.html">WEB</a></h1>
+        <div id="grid">
+            <script>
+                a_list.showList();
+            </script>
+            <p style=padding:20px;>
+                <img src="00_htmlimg.png" alt="html logo" width="250"><br>
+                Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+            </p>
+        </div>
+        
+    </body>
+</html>

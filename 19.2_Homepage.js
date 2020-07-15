@@ -82,7 +82,6 @@ var app = http.createServer(function(request,response){
         }
     }
     else{
-        // == 1 =========================
         response.writeHead(404);
         response.end('Not found')
     }

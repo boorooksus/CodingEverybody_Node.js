@@ -12,7 +12,6 @@ var app = http.createServer(function(request,response){
 
     var pathname = url.parse(_url, true).pathname;
 
-    // == 1 ======================================
     if(pathname ==='/'){
         if(queryData.id === undefined){
 
@@ -97,7 +96,6 @@ var app = http.createServer(function(request,response){
         }
     }
     else{
-        // == 1 =========================
         response.writeHead(404);
         response.end('Not found')
     }

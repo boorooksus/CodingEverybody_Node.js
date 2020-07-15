@@ -1,0 +1,6 @@
+Synchronous, Asynchronous 예고
+
+Synchronous: A -> B -> C 
+Asynchronous: A -> B
+                |
+                -> C

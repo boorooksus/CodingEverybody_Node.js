@@ -2,7 +2,7 @@
 
 Study for Node.js in Coding Everybody(Opentutorials)
 
-Reference of materials: "WEB2 - Node.js," Opentutorials, last modified AUG 15, 2018, accessed JUL 11, 2020, <https://opentutorials.org/course/3332>&<https://opentutorials.org/course/3332>
+Reference of materials: "WEB2 - Node.js," Opentutorials, last modified AUG 15, 2018, accessed JUL 11, 2020, <https://opentutorials.org/course/3332>
 
 
 file naming rule: [lecture number(version)]_[title of code].[extension]

@@ -14,7 +14,7 @@ file naming rule: [lecture number(version)]_[title of code].[extension]
 ***
 생활코딩(Opentutorials) Node.js 스터디
    
-구현 내용: 유저가 게시글을 등록/수정/삭제 할 수 있는 웹 어플리케이션입니다. 게시글은 파일 형태로 관리됩니다.
+구현 내용: 유저가 게시글을 등록/수정/삭제 할 수 있는 웹 어플리케이션입니다. 어플리케이션에서 생성된 게시글은 파일 형태로 관리됩니다.
    
 
 참고 자료
